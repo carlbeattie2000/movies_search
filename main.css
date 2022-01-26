@@ -4,16 +4,20 @@
   font-family: sans-serif;
 }
 
-body, html {
-  background-color: #2b2a33;
+html {
+  height: 100%;
+}
+
+body {
   min-height: 100%;
+  background-color: #2b2a33;
 }
 
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height: 100vh;
   column-gap: 4em;
 }
 
@@ -123,5 +127,9 @@ body, html {
   /* For desktop: */
   .search-container > input {
     width: 95%;
+  }
+
+  .container {
+    flex-wrap: wrap;
   }
 }
